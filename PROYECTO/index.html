@@ -1,44 +1,85 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="height-full" lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+	<!-- Title -->
     <title>UN POCO SOBRE CERVEZA</title>
-    
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<style type="text/css">
 
-
+* { font-size: x-large; }
+#overlay {
+	display: block;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+        color: white;
+	z-index:1001;
+	-moz-opacity: 0.7;
+	opacity:.70;
+	filter: alpha(opacity=70);}
+</style>
 </head>
 <body>
-    
-    <div id="contenedor">
-        <header>
-            <h1>EL RINCON DE LA CERVEZA</h1>
-        </header>
-        <nav>
-            <SEction ID="MENU">
-            
-                    
+<div id="overlay">
+    <center>
+        <br/><br/><br/><br/>
+        ADVERTENCIA <br/>
+        <input type="button" id="ofAge" value="Soy Mayor de Edad" />
+        <br/>
+        Al aceptar entrar esta pagina declara que es Mayor de 18 Años <br/>
+    </center>
+</div>
+<div id="contenedor">
+    <header>
+        <h1>EL RINCON DE LA CERVEZA</h1>
+    </header>
+    <nav>
+        <SEction ID="MENU">
+        
+                
 
-      <tr><a href="index.html">Home</a></tr>
-      <tr>  <a href="ingredientes.html">Ingredientes</a></tr>
-      <tr> <a href="contacto.html">Como encotrarnos</a></tr>
-   
-        </SEction>
-        </nav>
-        <section id="contenido">
-            <article>
-                <h2>Un poco de historia</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi, deleniti quis aperiam consectetur eligendi rem laudantium nostrum itaque pariatur quibusdam quia natus maxime hic cum! Pariatur ea amet voluptas!</p>
-            </article>
-        </section>
-      
-        <footer>
-            <i class="bx bxl-facebook-circle"></i>
-            <i class='bx bxl-instagram' ></i>   
-         </div>
-    
+  <tr><a href="index.html">Home</a></tr>
+  <tr>  <a href="ingredientes.html">Ingredientes</a></tr>
+  <tr> <a href="contacto.html">Como encotrarnos</a></tr>
+
+    </SEction>
+    </nav>
+    <section id="contenido">
+        <article>
+            <h2>Un poco de historia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sequi, deleniti quis aperiam consectetur eligendi rem laudantium nostrum itaque pariatur quibusdam quia natus maxime hic cum! Pariatur ea amet voluptas!</p>
+        </article>
+    </section>
+  
+    <footer>
+        <i class="bx bxl-facebook-circle"></i>
+        <i class='bx bxl-instagram' ></i>   
+     </div>
+
+
+<script type="text/javascript">
+var pop = document.getElementById("overlay");
+
+if ( document.cookie.indexOf("CERTIFIEDAGE18") >= 0 ) 
+{
+     pop.style.display = "none";
+}
+
+document.getElementById("ofAge").onclick = function() 
+{
+    document.cookie = "CERTIFIEDAGE18=true";
+    pop.style.display = "none";
+}
+</script>
 </body>
 </html>

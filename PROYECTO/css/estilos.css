@@ -4,8 +4,12 @@
     }
     
     body{
-        background: #444;
-            color: #fff;
+        /*background: #444;*/
+        color: #fff;
+        background-color: #85FFBD;
+        font-family: 'Shadows Into Light', cursive;
+        background-image: linear-gradient(252deg, #85FFBD 0%, #FFFB7D 100%);
+
     }
     
     #contenedor {
