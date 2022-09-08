@@ -4,21 +4,20 @@
     }
     
     body{
-        /*background: #444;*/
-        color: #fff;
-        background-color: #85FFBD;
-        font-family: 'Shadows Into Light', cursive;
-        background-image: linear-gradient(252deg, #85FFBD 0%, #FFFB7D 100%);
-
+        background: #444;
+            color: #fff;
     }
     
     #contenedor {
     width: 960px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     }
     
+    
+
+
     header {
         height: 150px;
         background: #000;
@@ -36,6 +35,7 @@
        
     }
     #MENU {
+       
         font-size: 40px;
         text-align: center;
         line-height: 60px;
@@ -46,20 +46,40 @@
     }  
     
 
-
-
-
-    
-    #contenido {
+    #ING {
         width: 960px;
-        height: 500px;
+        height: auto;
         background: rgb(29, 8, 49);
         
         margin-top: 10px;
         margin-right: 10px;
     }
+
+
     
-    h2{font-size: 40px;}
+    #contenido {
+       
+        width: 960px;
+        height: 1000px;
+        background: rgb(29, 8, 49);
+        
+        margin-top: 10px;
+        margin-right: 10px;
+        
+    }
+
+
+    
+    h2{
+        font-size: 40px;
+     
+         }
+
+          
+         h3{
+           
+
+         }
 
     #titulo {
         font-size: 30px;
@@ -68,7 +88,7 @@
     p{font-size: 20px;
     }
     
-    
+
     
     footer {
         background: #000;
@@ -76,11 +96,46 @@
         height: 40px;
         
         margin-top: 10px;
-        margin-right: 10px;
+        margin-right: 20px;
        
-        line-height: 40px;
-        text-align: center;
-        font-size: 20px;
-      
+        border-top: 2px solid rgba(0, 0, 0, 0.24);  
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+}
 
-    }
+
+
+
+
+
+
+.btn {
+	font-size: 16px; 
+	color: #ffffff; /* Color del texto */
+	background-color: #E91E63; /* Color de fondo */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+
+
+#consulta{
+
+ margin-left: 20px;
+}
+
+h3{
+    margin-top: 10px;
+    font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+}
+
+#map{
+    margin-left: 10px;
+}
