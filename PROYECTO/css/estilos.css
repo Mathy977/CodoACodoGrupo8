@@ -73,7 +73,7 @@
     #contenido {
        
         width: 960px;
-        height: 1000px;
+        height: 1150px;
         background: rgb(29, 8, 49);
         
         margin-top: 10px;
@@ -81,7 +81,15 @@
         
     }
 
-
+#contenido2{
+    width: 960px;
+    height: 2000px;
+    background: rgb(29, 8, 49);
+    
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
     
     h2{
         font-size: 40px;
