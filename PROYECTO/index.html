@@ -13,10 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 	<style type="text/css">
-
-
-
-* { font-size: x-large; }
 #overlay {
 	display: block;
 	position: absolute;
@@ -38,6 +34,8 @@
         <br/><br/><br/><br/>
         ADVERTENCIA <br/>
         <input type="button" id="ofAge" value="Soy Mayor de Edad" />
+        <br/>
+        <input type="button" id="ofAge2" value="No Soy Mayor de Edad" />
         <br/>
         Al aceptar entrar esta pagina declara que es Mayor de 18 Años <br/>
     </center>
@@ -84,6 +82,10 @@ document.getElementById("ofAge").onclick = function()
 {
     document.cookie = "CERTIFIEDAGE18=true";
     pop.style.display = "none";
+}
+document.getElementById("ofAge2").onclick = function() 
+{
+    window.location.href = "https://www.google.com";
 }
 </script>
 </body>
