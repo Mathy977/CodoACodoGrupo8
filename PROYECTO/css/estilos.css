@@ -1,167 +1,151 @@
-*{
-    margin: 0px;	
-    padding: 0px;
-    font-size: x-large;
-    }
-    
-    body{
-        background: #444;
-            color: #fff;
-    }
-    
-    #contenedor {
-        width: 960px;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        animation-name: anim;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
 
-    }
-    @keyframes anim
-    {
-        0% {background-color: #ff0;} /*Amarillo*/
-        25% {background-color: #f80;} /*Naranja*/
-        50% {background-color: #000;} /*Negro*/
-        75% {background-color: #f80;} /*Otra vez naranja*/
-        100% {background-color: #ff0;} /*Otra vez amarillo*/
-    }
+div {
+    
+ 
+    color: white;
+    background-color:black;
     
 
-
-    header {
-        height: 150px;
-        background: #000;
-    }
-    
-    header h1 {
-        font-size: 50px;
-        text-align: center;
-        line-height: 150px;
-        font-family: 'Shadows Into Light', cursive;
-    }
-    
-    nav {
-        background: pink;
-        height: 60px;
-       
-    }
-    #MENU {
-       
-        font-size: 40px;
-        text-align: center;
-        line-height: 60px;
-        margin-top: 10px;
-        margin-right: 10px;
-    
-       
-    }  
-    
-
-    #ING {
-        width: 960px;
-        height: auto;
-        background: rgb(29, 8, 49);
-        
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-
-
-    
-    #contenido {
-       
-        width: 960px;
-        height: 1150px;
-        background: rgb(29, 8, 49);
-        
-        margin-top: 10px;
-        margin-right: 10px;
-        
-    }
-
-#contenido2{
-    
-    width: 960px;
-    height: 3400px;
-    background: rgb(29, 8, 49);
-    
-    margin-top: 10px;
-    margin-right: 10px;
-    
 }
-    
-    h2{
-        font-size: 40px;
-     
-         }
+  
+  #header, #page, #footer {
+    height: 100%;
+    background: #000;
+    font-size: 50px;
+    text-align: center;
+    line-height: 150px;
+    font-family: 'Shadows Into Light', cursive;
 
-          
-         h3{
-           
+  }
 
-         }
 
-    #titulo {
-        font-size: 30px;
-    
-    }
-    p{font-size: 20px;
-    }
-    
 
-    
-    footer {
-        background: #000;
-        width: 960px;
-        height: 40px;
-        
-        margin-top: 10px;
-        margin-right: 20px;
+
+nav {
+  background: black;
+  height: 60px;
+ 
+  }
+
+  
+  #menu, #content {
+     display: inline-block;
+  }
+  
+
+  #MENU {
        
-        border-top: 2px solid rgba(0, 0, 0, 0.24);  
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-}
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    margin-top: 5px; 
+    border: 1px solid #28323f;
+
+   
+  }  
 
 
+  #menu {
+   
+    width: 100%;
+    background-color: black;
+  }
+  
+  
+  #content {
+    background-color: #6d563b;
+    width: 100%;
+    color: rgb(235, 247, 234);
+
+  }
 
 
+  @media screen and (max-width: 640px) {
+    #menu {
+      background: rgb(138, 138, 143);
+      
+    }
+  }
+  
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    #menu {
+      background: rgb(58, 41, 155);
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    #menu {
+      background: rgb(70, 3, 3);
+    }
+  }
 
 
-
-.btn {
-	font-size: 16px; 
-	color: #ffffff; 
-	background-color: #1ed5e9; 
+  .btn {
+  font-weight: bold;
+  font-size: 25px; 
+	color: #000000; 
+	background-color: green; 
 	position: fixed;
 	bottom: 60px;
 	right: 60px;
-	transition: all 300ms ease 0ms;
-	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 300ms ease 0.1s;
 	z-index: 99;
+
+}
+
+.btn:hover {
+  background-position: right;
+  color: rgb(241, 237, 237);
+  font-weight: 700;
 }
 
 
-#consulta{
 
- margin-left: 20px;
+  h3{
+    margin-top: 20px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+
 }
 
-h3{
+
+
+
+h2{
+    
     margin-top: 10px;
     font-style: italic;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
 }
 
-#map{
-    margin-left: 10px;
+p{
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: left;
+  margin-left: 20px;
 }
 
+.btn1 {
+  padding: 15px 50px;
+  margin: 10px;
+  font-size: 20px;
+  border: 0px solid #ff8b07;
+  color: white;
+  cursor: pointer; 
+  background: linear-gradient(to right, transparent 50%, #6d563b 50%);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 0.5s;
+}
 
-
+.btn1:hover {
+  background-position: right;
+  color: black;
+  font-weight: 700;
+}
 
