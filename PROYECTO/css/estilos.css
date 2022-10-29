@@ -1,14 +1,21 @@
 
-div {
+#header, #MENU, #contactForm {
     
  
     color: white;
     background-color:black;
     
+    
 
 }
-  
-  #header, #page, #footer {
+
+#header{
+  font-size: 100px;
+  font-style: italic;
+}
+
+
+#page, #footer {
     height: 100%;
     background: #000;
     font-size: 50px;
@@ -149,7 +156,8 @@ p{
   font-weight: 700;
 }
 
-#mapa{
-  height: 500px;
-  width:100% ;
+#submitButton{
+  position: static;
 }
+
+
