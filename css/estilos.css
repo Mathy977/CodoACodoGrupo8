@@ -12,6 +12,10 @@
 #header{
   font-size: 100px;
   font-style: italic;
+  background-color: #6d563b;
+  width: 100%;
+  color: rgb(235, 247, 234);
+  display: inline-block;
 }
 
 
@@ -161,3 +165,6 @@ p{
 }
 
 
+h1{
+  text-align: center;
+}
